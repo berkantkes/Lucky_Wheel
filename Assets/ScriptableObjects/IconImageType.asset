@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d11a1c62d59c94cbd780671a3f1c51, type: 3}
+  m_Name: IconImageType
+  m_EditorClassIdentifier: 
+  iconImageDatas:
+  - _iconSprite: {fileID: 21300000, guid: 84d3abe7ea71eb14ab970ffe00d694a2, type: 3}
+    slicedType: 0
+    _name: CASH
+  - _iconSprite: {fileID: 21300000, guid: 1eeb2982dd7bd254689e78e7dcca3040, type: 3}
+    slicedType: 1
+    _name: GOLD
+  - _iconSprite: {fileID: 21300000, guid: 6fcef526f07e8f2418a69e8ccdf6920d, type: 3}
+    slicedType: 2
+    _name: CHEST BIG
+  - _iconSprite: {fileID: 21300000, guid: 235f580038b7f434a8fed51be68124e4, type: 3}
+    slicedType: 3
+    _name: CHEST BRONZE
+  - _iconSprite: {fileID: 21300000, guid: 3c3ecdbb02578974795feaa493370158, type: 3}
+    slicedType: 4
+    _name: CHEST GOLD
+  - _iconSprite: {fileID: 21300000, guid: cfb364dbbffe38e498858c3808b6838b, type: 3}
+    slicedType: 5
+    _name: CHEST SILVER
+  - _iconSprite: {fileID: 21300000, guid: 18c119fa4ed220d4c9dd5c8d5a957314, type: 3}
+    slicedType: 6
+    _name: CHEST SMALL
+  - _iconSprite: {fileID: 21300000, guid: 04f6bdb93472e1f47ae048bc00682253, type: 3}
+    slicedType: 7
+    _name: ARMOR POINTS
+  - _iconSprite: {fileID: 21300000, guid: c7d231db7bddd46479167254071eda5c, type: 3}
+    slicedType: 8
+    _name: KNIFE POINTS
+  - _iconSprite: {fileID: 21300000, guid: 9d547831baacf214d953b8be6ba21c5a, type: 3}
+    slicedType: 9
+    _name: PISTOL POINTS
+  - _iconSprite: {fileID: 21300000, guid: 7d4fd74412aa4a34b91bba824a00d595, type: 3}
+    slicedType: 10
+    _name: RIFFLE POINTS
+  - _iconSprite: {fileID: 21300000, guid: f3bed226a8540af46904abb6cb3cb738, type: 3}
+    slicedType: 11
+    _name: SHOTGUN POINTS
+  - _iconSprite: {fileID: 21300000, guid: f739679a6f8db1e46a2ec40ba3368c97, type: 3}
+    slicedType: 12
+    _name: DEATH

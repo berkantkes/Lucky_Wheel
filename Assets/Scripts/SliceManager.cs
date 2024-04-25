@@ -1,17 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SliceManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _amount;
 
-    public void SetSliceDatas(SlicedData slicedData)
-    {
-        _amount.SetText("x" + slicedData.amount);
+    IconImageController _iconImageController;
 
-        GameObject itemImage = Instantiate(UiImageSelect.GetSlicedItemImage(slicedData.slicedType), transform);
+    public void SetSliceDatas(SliceData sliceData)
+    {
+        if (_iconImageController != null)
+        {
+            Destroy(_iconImageController.gameObject);
+        }
+
+        if (sliceData.amount != 0)
+        {
+            _amount.SetText("x" + sliceData.amount);
+        }
+        else
+        {
+            _amount.SetText("");
+        }
+
+        _iconImageController = Instantiate(UiImageSelect.GetSlicedItemGameObject(sliceData.sliceType), transform);
+
+        _iconImageController.SetSprite(UiImageSelect.GetSlicedItemSprite(sliceData.sliceType));
     }
 }

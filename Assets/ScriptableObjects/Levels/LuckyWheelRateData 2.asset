@@ -10,24 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0fbd6cbaab9bcb4989a7d7eaa58c0e0, type: 3}
-  m_Name: 2LuckyWheel
+  m_Name: LuckyWheelRateData 2
   m_EditorClassIdentifier: 
-  luckyWheelDatas:
-  - amount: 10
-    slicedType: 0
-  - amount: 5
-    slicedType: 1
-  - amount: 15
-    slicedType: 0
-  - amount: 20
-    slicedType: 2
-  - amount: 5
-    slicedType: 3
-  - amount: 6
-    slicedType: 1
-  - amount: 4
-    slicedType: 2
-  - amount: 6
-    slicedType: 3
-  - amount: 8
-    slicedType: 1
+  SlicesRateData:
+  - rate: 505
+    sliceType: 0
+  - rate: 505
+    sliceType: 1
+  - rate: 5
+    sliceType: 2
+  - rate: 5
+    sliceType: 3
+  - rate: 5
+    sliceType: 4
+  - rate: 5
+    sliceType: 5
+  - rate: 5
+    sliceType: 6
+  - rate: 5
+    sliceType: 7
+  - rate: 5
+    sliceType: 10
+  - rate: 5
+    sliceType: 11
