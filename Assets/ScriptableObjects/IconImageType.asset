@@ -54,7 +54,7 @@ MonoBehaviour:
     _name: REGENERATOR
   - _iconSprite: {fileID: 21300000, guid: cb55b50613da89a448086d394e93544d, type: 3}
     slicedType: 13
-    _name: DEATH
+    _name: MOLOTOV
   - _iconSprite: {fileID: 21300000, guid: cf0ed6890f5f5fa4d80fc9f71ef51bb7, type: 3}
     slicedType: 14
     _name: SHOTGUN TIER 1

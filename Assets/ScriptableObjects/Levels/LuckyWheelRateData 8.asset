@@ -22,18 +22,18 @@ MonoBehaviour:
   - rate: 3
     sliceType: 3
   - rate: 5
-    sliceType: 4
+    sliceType: 3
   - rate: 12
     sliceType: 5
   - rate: 4
-    sliceType: 6
+    sliceType: 12
   - rate: 25
     sliceType: 7
   - rate: 50
-    sliceType: 8
+    sliceType: 11
   - rate: 40
     sliceType: 9
   - rate: 60
-    sliceType: 10
+    sliceType: 23
   - rate: 20
-    sliceType: 11
+    sliceType: 25

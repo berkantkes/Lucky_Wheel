@@ -41,7 +41,7 @@ public class SpecialRewardCardController : MonoBehaviour
 
     public void CheckSpecialRewardCard(LevelType levelType)
     {
-        if (levelType == LevelType.Default)
+        if (levelType == LevelType.SuperZone)
         {
             SetAndActivateSpecialRewardCard(TypesOfSlice.BayonetEasterTime);
         }
