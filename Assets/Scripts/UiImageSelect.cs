@@ -10,7 +10,7 @@ public class UiImageSelect : MonoBehaviour
     [SerializeField] private IconImageController _chestGameobject;
     [SerializeField] private IconImageController _itemPointsGameobject;
     [SerializeField] private IconImageController _deathGameobject;
-    [SerializeField] private IconImageController _weapenGameobject;
+    [SerializeField] private IconImageController _weaponGameobject;
     [SerializeField] private IconImageController _supportiveGameobject;
     [SerializeField] private IconImageType _iconImageType;
 
@@ -40,12 +40,30 @@ public class UiImageSelect : MonoBehaviour
             [TypesOfSlice.ChestGold] = _chestGameobject,
             [TypesOfSlice.ChestSilver] = _chestGameobject,
             [TypesOfSlice.ChestSmall] = _chestGameobject,
+            [TypesOfSlice.ChestStandart] = _chestGameobject,
+            [TypesOfSlice.ChestSuper] = _chestGameobject,
+            [TypesOfSlice.GrenadeM26] = _supportiveGameobject,
+            [TypesOfSlice.GrenadeM67] = _supportiveGameobject,
+            [TypesOfSlice.Neurostim] = _supportiveGameobject,
+            [TypesOfSlice.Regenerator] = _supportiveGameobject,
+            [TypesOfSlice.Molotov] = _supportiveGameobject,
+            [TypesOfSlice.ShotgunTier1] = _weaponGameobject,
+            [TypesOfSlice.MleTier2] = _weaponGameobject,
+            [TypesOfSlice.RifleTier2] = _weaponGameobject,
+            [TypesOfSlice.ShotgunTier3] = _weaponGameobject,
+            [TypesOfSlice.SmgTier3] = _weaponGameobject,
+            [TypesOfSlice.SniperTier3] = _weaponGameobject,
             [TypesOfSlice.ArmorPoints] = _itemPointsGameobject,
             [TypesOfSlice.KnifePoints] = _itemPointsGameobject,
             [TypesOfSlice.PistolPoints] = _itemPointsGameobject,
             [TypesOfSlice.RifflePoints] = _itemPointsGameobject,
             [TypesOfSlice.ShotgunPoints] = _itemPointsGameobject,
+            [TypesOfSlice.SMGPoints] = _itemPointsGameobject,
+            [TypesOfSlice.SniperPoints] = _itemPointsGameobject,
+            [TypesOfSlice.SubmachinePoints] = _itemPointsGameobject,
             [TypesOfSlice.Death] = _deathGameobject,
+            [TypesOfSlice.BayonetEasterTime] = _weaponGameobject,
+            [TypesOfSlice.BayonetSummerVice] = _weaponGameobject,
 
         };
 
@@ -62,12 +80,30 @@ public class UiImageSelect : MonoBehaviour
             [TypesOfSlice.ChestGold] = GeneralTypesOfSlice.Chest,
             [TypesOfSlice.ChestSilver] = GeneralTypesOfSlice.Chest,
             [TypesOfSlice.ChestSmall] = GeneralTypesOfSlice.Chest,
+            [TypesOfSlice.ChestStandart] = GeneralTypesOfSlice.Chest,
+            [TypesOfSlice.ChestSuper] = GeneralTypesOfSlice.Chest,
+            [TypesOfSlice.GrenadeM26] = GeneralTypesOfSlice.Supportive,
+            [TypesOfSlice.GrenadeM67] = GeneralTypesOfSlice.Supportive,
+            [TypesOfSlice.Neurostim] = GeneralTypesOfSlice.Supportive,
+            [TypesOfSlice.Regenerator] = GeneralTypesOfSlice.Supportive,
+            [TypesOfSlice.Molotov] = GeneralTypesOfSlice.Supportive,
+            [TypesOfSlice.ShotgunTier1] = GeneralTypesOfSlice.Weapon,
+            [TypesOfSlice.MleTier2] = GeneralTypesOfSlice.Weapon,
+            [TypesOfSlice.RifleTier2] = GeneralTypesOfSlice.Weapon,
+            [TypesOfSlice.ShotgunTier3] = GeneralTypesOfSlice.Weapon,
+            [TypesOfSlice.SmgTier3] = GeneralTypesOfSlice.Weapon,
+            [TypesOfSlice.SniperTier3] = GeneralTypesOfSlice.Weapon,
             [TypesOfSlice.ArmorPoints] = GeneralTypesOfSlice.ItemPoints,
             [TypesOfSlice.KnifePoints] = GeneralTypesOfSlice.ItemPoints,
             [TypesOfSlice.PistolPoints] = GeneralTypesOfSlice.ItemPoints,
             [TypesOfSlice.RifflePoints] = GeneralTypesOfSlice.ItemPoints,
             [TypesOfSlice.ShotgunPoints] = GeneralTypesOfSlice.ItemPoints,
+            [TypesOfSlice.SMGPoints] = GeneralTypesOfSlice.ItemPoints,
+            [TypesOfSlice.SniperPoints] = GeneralTypesOfSlice.ItemPoints,
+            [TypesOfSlice.SubmachinePoints] = GeneralTypesOfSlice.ItemPoints,
             [TypesOfSlice.Death] = GeneralTypesOfSlice.Death,
+            [TypesOfSlice.BayonetEasterTime] = GeneralTypesOfSlice.Weapon,
+            [TypesOfSlice.BayonetSummerVice] = GeneralTypesOfSlice.Weapon,
 
         };
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private LevelBarManager _levelBarManager;
     [SerializeField] private SpinBaseController _spinBaseController;
     [SerializeField] private EarnCardController _earnCardController;
+    [SerializeField] private SpecialRewardCardController _specialRewardCardController;
     [SerializeField] private LevelGenerator _levelGenerator;
     [SerializeField] private RewardCollecterManager _rewardCollecterManager;
 
@@ -41,11 +43,24 @@ public class LevelManager : MonoBehaviour
         _currentLevel++;
         LevelType levelType = GetLevelType(_currentLevel);
 
+        if (_currentLevel > 60)
+        {
+            EventManager.Execute(GameEvents.OnLevelEnd);
+            ResetLevel();
+            return;
+        }
+
+        CheckSpecialReward(levelType);
         _levelBarManager.LevelUp(levelType);
         _levelGenerator.LoadLevel(_currentLevel,levelType);
         _spinController.SetSpinButtonEnable(true);
         _spinBaseController.SetSpinBaseImage(levelType);
         _earnCardController.SetAndActivateEarnCard(slicedData);
+    }
+
+    private void CheckSpecialReward(LevelType levelType)
+    {
+        _specialRewardCardController.CheckSpecialRewardCard(levelType);
     }
 
     public void DeathCard(SliceData slicedData)

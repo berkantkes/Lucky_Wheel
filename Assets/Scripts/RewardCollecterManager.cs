@@ -32,8 +32,10 @@ public class RewardCollecterManager : MonoBehaviour
         EventManager.Subscribe(GameEvents.OnStartSpinTurn, SetSpinTurnTrue);
         EventManager.Subscribe(GameEvents.OnEndSpinTurn, SetSpinTurnFalse);
         EventManager.Subscribe(GameEvents.OnGiveUp, ResetRewardItems);
+        EventManager.Subscribe(GameEvents.OnLevelEnd, ResetRewardItems);
         EventManager.Subscribe(GameEvents.OnCollectRewards, ResetRewardItems);
         EventManager<SliceData>.Subscribe(GameEvents.OnEarnReward, AddReward);
+        EventManager<SliceData>.Subscribe(GameEvents.OnCollectSpecialReward, AddReward);
     }
     private void OnDisable()
     {
@@ -41,8 +43,10 @@ public class RewardCollecterManager : MonoBehaviour
         EventManager.Unsubscribe(GameEvents.OnStartSpinTurn, SetSpinTurnTrue);
         EventManager.Unsubscribe(GameEvents.OnEndSpinTurn, SetSpinTurnFalse);
         EventManager.Unsubscribe(GameEvents.OnGiveUp, ResetRewardItems);
+        EventManager.Unsubscribe(GameEvents.OnLevelEnd, ResetRewardItems);
         EventManager.Unsubscribe(GameEvents.OnCollectRewards, ResetRewardItems);
         EventManager<SliceData>.Unsubscribe(GameEvents.OnEarnReward, AddReward);
+        EventManager<SliceData>.Unsubscribe(GameEvents.OnCollectSpecialReward, AddReward);
     }
 
     private void CheckActiveExitButton()
@@ -93,13 +97,19 @@ public class RewardCollecterManager : MonoBehaviour
         _rewards.Clear();
 
         _rewardIndex = 0;
+
+        Vector2 size = _container.sizeDelta;
+
+        size.y = 105;
+
+        _container.sizeDelta = size;
     }
 
     public void IncreaseHeight()
     {
         Vector2 size = _container.sizeDelta;
 
-        size.y += 45;
+        size.y += 135;
 
         _container.sizeDelta = size;
     }

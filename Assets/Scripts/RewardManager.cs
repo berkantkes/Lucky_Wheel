@@ -26,7 +26,7 @@ public class RewardManager : MonoBehaviour
 
         _iconImageController.SetSprite(UiImageSelect.GetSlicedItemSprite(sliceData.sliceType));
 
-        _iconImageController.transform.localPosition = Vector3.zero;
+        _iconImageController.transform.localPosition = new Vector3(-100,0,0);
 
         _imageObject = _iconImageController.gameObject;
     }

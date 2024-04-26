@@ -34,21 +34,75 @@ MonoBehaviour:
   - _iconSprite: {fileID: 21300000, guid: 18c119fa4ed220d4c9dd5c8d5a957314, type: 3}
     slicedType: 6
     _name: CHEST SMALL
-  - _iconSprite: {fileID: 21300000, guid: 04f6bdb93472e1f47ae048bc00682253, type: 3}
+  - _iconSprite: {fileID: 21300000, guid: c2b717fa7aaf253498c1b3bd398b8bff, type: 3}
     slicedType: 7
+    _name: CHEST STANDART
+  - _iconSprite: {fileID: 21300000, guid: dd8091456dc03dc44a901b2f53a02fd8, type: 3}
+    slicedType: 8
+    _name: CHEST SUPER
+  - _iconSprite: {fileID: 21300000, guid: e3045c5a4594f1642a38dc198af0bf89, type: 3}
+    slicedType: 9
+    _name: GRENADE M26
+  - _iconSprite: {fileID: 21300000, guid: 2e12cb56abb2cee4198713a9020d13ff, type: 3}
+    slicedType: 10
+    _name: GRENADE M67
+  - _iconSprite: {fileID: 21300000, guid: a6021940ec883a9478fef6f0aa56f567, type: 3}
+    slicedType: 11
+    _name: NEUROTISM
+  - _iconSprite: {fileID: 21300000, guid: cdad152ccebcf2c47942c9eae8887120, type: 3}
+    slicedType: 12
+    _name: REGENERATOR
+  - _iconSprite: {fileID: 21300000, guid: cb55b50613da89a448086d394e93544d, type: 3}
+    slicedType: 13
+    _name: DEATH
+  - _iconSprite: {fileID: 21300000, guid: cf0ed6890f5f5fa4d80fc9f71ef51bb7, type: 3}
+    slicedType: 14
+    _name: SHOTGUN TIER 1
+  - _iconSprite: {fileID: 21300000, guid: b9ba4f3d217fff94e8fa120e1dab3d5b, type: 3}
+    slicedType: 15
+    _name: MLE TIER 2
+  - _iconSprite: {fileID: 21300000, guid: 52dfae4fb74ebb34c9faa73eb662c4a3, type: 3}
+    slicedType: 16
+    _name: RIFLE TIER 2
+  - _iconSprite: {fileID: 21300000, guid: 6b050ea79b9128c4f8a1465b9d7ca612, type: 3}
+    slicedType: 17
+    _name: SHOTGUN TIER 3
+  - _iconSprite: {fileID: 21300000, guid: 64b7fbfd2bffbc045a9697e7f3938b2c, type: 3}
+    slicedType: 18
+    _name: SMG TIER 3
+  - _iconSprite: {fileID: 21300000, guid: de21037e465e61f428d328ea7cc0d9e6, type: 3}
+    slicedType: 19
+    _name: SNIPER TIER 3
+  - _iconSprite: {fileID: 21300000, guid: 04f6bdb93472e1f47ae048bc00682253, type: 3}
+    slicedType: 20
     _name: ARMOR POINTS
   - _iconSprite: {fileID: 21300000, guid: c7d231db7bddd46479167254071eda5c, type: 3}
-    slicedType: 8
+    slicedType: 21
     _name: KNIFE POINTS
   - _iconSprite: {fileID: 21300000, guid: 9d547831baacf214d953b8be6ba21c5a, type: 3}
-    slicedType: 9
+    slicedType: 22
     _name: PISTOL POINTS
   - _iconSprite: {fileID: 21300000, guid: 7d4fd74412aa4a34b91bba824a00d595, type: 3}
-    slicedType: 10
-    _name: RIFFLE POINTS
+    slicedType: 23
+    _name: RIFLE POINTS
   - _iconSprite: {fileID: 21300000, guid: f3bed226a8540af46904abb6cb3cb738, type: 3}
-    slicedType: 11
-    _name: SHOTGUN POINTS
+    slicedType: 24
+    _name: SHOTGUN
   - _iconSprite: {fileID: 21300000, guid: f739679a6f8db1e46a2ec40ba3368c97, type: 3}
-    slicedType: 12
+    slicedType: 25
+    _name: SMG POINTS
+  - _iconSprite: {fileID: 21300000, guid: 0481e66c1ba273a42bb0d0a526ee1459, type: 3}
+    slicedType: 26
+    _name: SNIPER POINTS
+  - _iconSprite: {fileID: 21300000, guid: 22b5604d30485e6468b050f503a03b8b, type: 3}
+    slicedType: 27
+    _name: SUBMACHINE POINTS
+  - _iconSprite: {fileID: 21300000, guid: f739679a6f8db1e46a2ec40ba3368c97, type: 3}
+    slicedType: 28
     _name: DEATH
+  - _iconSprite: {fileID: 21300000, guid: 6d8132af11575474385141e3a6ecdd24, type: 3}
+    slicedType: 29
+    _name: BAYONET EASTER TIME
+  - _iconSprite: {fileID: 21300000, guid: a51574498fd1e2b48affb22556013ef7, type: 3}
+    slicedType: 30
+    _name: BAYONET SUMMER TIME

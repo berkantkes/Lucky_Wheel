@@ -15,7 +15,7 @@ public class LevelBarManager : MonoBehaviour
     [SerializeField] private Sprite _levelTextBg30;
 
     private LevelManager _levelManager;
-    private int _xSpacing = 80;
+    private int _xSpacing = 240;
     private float _levelTextMoveDuration = 1;
 
     public void Initialize(LevelManager levelManager)
@@ -51,19 +51,21 @@ public class LevelBarManager : MonoBehaviour
     private void OnEnable()
     {
         EventManager.Subscribe(GameEvents.OnGiveUp, ResetLevel);
+        EventManager.Subscribe(GameEvents.OnLevelEnd, ResetLevel);
         EventManager.Subscribe(GameEvents.OnCollectRewards, ResetLevel);
     }
 
     private void OnDisable()
     {
         EventManager.Unsubscribe(GameEvents.OnGiveUp, ResetLevel);
+        EventManager.Unsubscribe(GameEvents.OnLevelEnd, ResetLevel);
         EventManager.Unsubscribe(GameEvents.OnCollectRewards, ResetLevel);
     }
 
 
     public void LevelUp(LevelType levelType)
     {
-        _levelTextsParentTransform.DOMoveX(_levelTextsParentTransform.position.x - _xSpacing, _levelTextMoveDuration)
+        _levelTextsParentTransform.DOLocalMoveX(_levelTextsParentTransform.localPosition.x - _xSpacing, _levelTextMoveDuration)
             .SetEase(Ease.InOutCubic);
 
         if (levelType == LevelType.SuperZone)

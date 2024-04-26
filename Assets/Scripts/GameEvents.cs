@@ -3,6 +3,8 @@ public enum GameEvents
     OnStartSpinTurn,
     OnEndSpinTurn,
     OnGiveUp,
+    OnLevelEnd,
     OnCollectRewards,
-    OnEarnReward
+    OnEarnReward,
+    OnCollectSpecialReward
 }

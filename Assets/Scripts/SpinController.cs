@@ -26,6 +26,7 @@ public class SpinController : MonoBehaviour
     {
         _spinButton.onClick.AddListener(Spin);
         EventManager.Subscribe(GameEvents.OnGiveUp, GiveUp);
+        EventManager.Subscribe(GameEvents.OnLevelEnd, GiveUp);
         EventManager.Subscribe(GameEvents.OnCollectRewards, GiveUp);
     }
 
@@ -33,6 +34,7 @@ public class SpinController : MonoBehaviour
     {
         _spinButton.onClick.RemoveListener(Spin);
         EventManager.Unsubscribe(GameEvents.OnGiveUp, GiveUp);
+        EventManager.Unsubscribe(GameEvents.OnLevelEnd, GiveUp);
         EventManager.Unsubscribe(GameEvents.OnCollectRewards, GiveUp);
     }
 

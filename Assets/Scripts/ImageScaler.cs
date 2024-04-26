@@ -5,8 +5,8 @@ public class ImageScaler : MonoBehaviour
 {
 
     public Image imageComponent;
-    public float targetWidth = 270f;
-    public float targetHeight = 340f;
+    public float targetWidth = 800f;
+    public float targetHeight = 800f;
 
     private static ImageScaler _instance;
     public static ImageScaler Instance
